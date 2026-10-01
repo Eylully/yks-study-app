@@ -1,0 +1,246 @@
+.studies-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Üst Gün Seçici */
+.day-selector {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 12px;
+  overflow-x: auto;
+}
+
+.day-btn {
+  padding: 10px 20px;
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #6c757d;
+  transition: all 0.3s;
+}
+
+.day-btn:hover {
+  background: #e9ecef;
+}
+
+.day-btn.active {
+  background: #007bff;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+/* Ana İçerik Izgarası */
+.studies-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+}
+
+/* Günlük Program Paneli */
+.daily-program-panel {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px #0056b3;
+  border-bottom: 2px solid #0056b3;
+  padding-bottom: 10px;
+}
+.panel-header h2 {
+  color: #0056b3;
+  margin: 0; /* Başlığın gereksiz boşluk yapmasını engeller */
+}
+.date-badge {
+  background: #e6f2ff;
+  color: #0056b3;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.tasks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.task-item {
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  padding: 15px;
+  transition: all 0.2s;
+}
+
+.task-item.completed {
+  background-color: #f8fff9;
+  border-color: #28a745;
+  opacity: 0.8;
+}
+
+.task-item.completed .task-subject {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 15px;
+}
+
+.checkbox-container input {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.task-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-subject {
+  font-size: 16px;
+  font-weight: 600;
+  color: #212529;
+}
+
+.task-time {
+  font-size: 13px;
+  color: #6c757d;
+  margin-top: 4px;
+}
+
+.save-btn {
+  margin-top: 25px;
+  width: 100%;
+  padding: 14px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
+}
+
+.save-btn:hover {
+  background: #218838;
+}
+
+/* Eksikler Panosu */
+.missed-tasks-panel {
+  background: #fff5f5;
+  padding: 25px;
+  border-radius: 16px;
+  border: 2px dashed #ffc9c9;
+}
+
+.missed-header h3 {
+  color: #e03131;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.missed-header p {
+  font-size: 13px;
+  color: #f03e3e;
+  margin-bottom: 20px;
+}
+
+.missed-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.missed-item {
+  background: white;
+  border: 1px solid #ffc9c9;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(224, 49, 49, 0.05);
+}
+
+.missed-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.missed-subject {
+  font-weight: 600;
+  color: #495057;
+  font-size: 14px;
+}
+
+.missed-time {
+  font-size: 12px;
+  color: #868e96;
+  margin-top: 4px;
+}
+
+.complete-missed-btn {
+  background: #eebefa;
+  color: #862e9c;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.complete-missed-btn:hover {
+  background: #e599f7;
+}
+
+@media (max-width: 900px) {
+  .studies-content {
+    grid-template-columns: 1fr;
+  }
+}
+.custom-toast-notification {
+  position: fixed;
+  top: 25px;
+  right: 30px;
+  background: #16a34a;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(22, 163, 74, 0.3);
+  z-index: 1100;
+  animation: slideIn 0.3s ease, fadeOut 0.3s ease 3.2s;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

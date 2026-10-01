@@ -1,0 +1,19 @@
+services:
+  db:
+    image: postgres:15
+    container_name: yks_postgres
+    restart: unless-stopped
+
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 12345
+      POSTGRES_DB: yks_db
+
+    ports:
+    - "5433:5432"
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
