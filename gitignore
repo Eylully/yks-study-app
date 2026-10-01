@@ -13,3 +13,12 @@ node_modules/
 dist/
 build/
 .DS_Store
+
+# SQLite veritabanı dosyaları
+*.db
+*.sqlite
+*.sqlite3
+
+# Python cache ve sanal ortam dosyaları
+__pycache__/
+venv/
