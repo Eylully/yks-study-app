@@ -1,24 +1,24 @@
-# Python / FastAPI
+# --- Python & FastAPI ---
 __pycache__/
 *.py[cod]
+*.sqlite
 *.sqlite3
 *.db
-sql_app.db
+
+# Environment Variables
 .env
+backend/.env
+
+# Virtual Environments
 venv/
 env/
+backend/venv/
+backend/env/
 
-# React / Node
+# --- React & Node ---
 node_modules/
 dist/
 build/
+
+# --- System Files ---
 .DS_Store
-
-# SQLite veritabanı dosyaları
-*.db
-*.sqlite
-*.sqlite3
-
-# Python cache ve sanal ortam dosyaları
-__pycache__/
-venv/
