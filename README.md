@@ -8,7 +8,7 @@
 ![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
-YKS (Yükseköğretim Kurumları Sınavı) hazırlık sürecini dijital ortamda profesyonelce planlamak, ders ve konu bazlı ilerlemeleri yönetmek, hedef takibi yapmak ve günlük çalışma / eksik takibi oluşturmak için geliştirilmiş kapsamlı bir **Full-Stack** web uygulamasıdır.
+YKS hazırlık sürecini dijital ortamda profesyonelce planlamak, ders ve konu bazlı ilerlemeleri yönetmek, hedef takibi yapmak ve günlük çalışma / eksik takibi oluşturmak için geliştirilmiş kapsamlı bir web uygulamasıdır.
 
 </div>
 
@@ -16,7 +16,7 @@ YKS (Yükseköğretim Kurumları Sınavı) hazırlık sürecini dijital ortamda 
 
 ## 🌟 Öne Çıkan Özellikler
 
-* **📊 Dinamik Hedefler ve Geri Sayım:** Sınava kalan gün sayısını anlık takip edin; meslek hedefi (örn. Hukuk), günlük çalışma saati, hedef sıralama ve TYT/AYT net hedeflerinizi belirleyin.
+* **📊 Dinamik Hedefler ve Geri Sayım:** Sınava kalan gün sayısını anlık takip edin; meslek hedefi, günlük çalışma saati, hedef sıralama ve TYT/AYT net hedeflerinizi belirleyin.
 * **📅 İnteraktif Haftalık Program:** Saatlik ve gün bazlı planlama yapın; *Konu Çalışması, Video Ders, Test, Branş Denemesi, Mola, Genel Deneme* ve *Kitap Okuma* gibi etkinlikleri kolayca organize edin.
 * **⏱️ Çalışmalarım & Eksik Takibi:** Günlük programları günün sonunda kaydedin; geçmiş 7 günde atlanan/yapılmayan görevleri sağ panelde görerek "Yaptım! ✓" butonuyla kolayca telafi edin.
 * **📚 Kapsamlı Ders & Konu Yönetimi:** TYT ve AYT kategorilerinde toplam 21 ders ve 295+ konuyu yönetin. Anlık arama çubuğu ile konuları filtreleyin.
